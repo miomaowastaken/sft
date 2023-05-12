@@ -1,5 +1,6 @@
 // tbh I like to write this in c than cpp
 #include <iostream>
+#include "second.h"
 
 void userInput(std::string option)
 {
@@ -21,6 +22,7 @@ int main()
 {
     std::cout << "\033[2J" << "\033[H";
     userInput("deco");
+    sex();
 
     return 0;
 }

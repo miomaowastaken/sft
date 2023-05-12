@@ -1,8 +1,8 @@
-output: main.o
-	g++ main.o -o output -Wall -Wextra -Wconversion -O2
+output: main.o second.o
+	g++ main.o second.o -o output -Wall -Wextra -Wconversion -O2
 
-main.o: main.cpp
-	g++ main.cpp -c
+main.o: main.cpp second.c
+	g++ main.cpp second.c -c
 
 clean:
-	rm main.o output
+	rm main.o second.o output
